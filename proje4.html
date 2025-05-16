@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex's Portfolio</title>
+  <link rel="stylesheet" href="style4.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins :wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos @2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js @2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator"></div>
+
+  <!-- Audio Player -->
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Alex</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <h1>Welcome to My Universe</h1>
+    <p>Web Developer | Creative Coder | UI/UX Designer</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about" data-aos="fade-in">
+    <h2>About Me</h2>
+    <p>I craft digital experiences that combine beauty and performance. I’m passionate about building stunning, interactive, and responsive websites.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills parallax" data-aos="fade-up">
+    <h2>My Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>UI/UX Design</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects" data-aos="zoom-in">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>E-commerce Store</h3>
+      <p>Built with React, Node.js, and MongoDB for seamless shopping experience.</p>
+    </div>
+    <div class="project-card">
+      <h3>Task Manager App</h3>
+      <p>Full-stack task management app with authentication and real-time updates.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact" data-aos="flip-left">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Alex. All rights reserved.</p>
+  </footer>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Scripts -->
+  <script src="particles-config.js"></script>
+  <script src="script4.js"></script>
+  <script src="https://unpkg.com/aos @2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
